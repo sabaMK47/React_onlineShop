@@ -7,7 +7,7 @@ import untillove from '../assets/untillove.jpg';
 
 export const Products = [
     {
-        id:0,
+        id:1,
         bookImage:allthelights,
         bookName:'ALL THE LIGHT WE CAN NOT SEE',
         authorName:'anthony doerr',
@@ -15,7 +15,7 @@ export const Products = [
         quantity:120
     },
     {
-        id:1,
+        id:2,
         bookImage:astoryofstruggle,
         bookName:'A STORY OF STRUGGLE',
         authorName:'ashok kumawat',
@@ -23,7 +23,7 @@ export const Products = [
         quantity:20
     },
     {
-        id:2,
+        id:3,
         bookImage:deathcomestocall,
         bookName:'DEATH COMES TO CALL',
         authorName:'clare chase',
@@ -31,7 +31,7 @@ export const Products = [
         quantity:98
     },
     {
-        id:3,
+        id:4,
         bookImage:nobodykilledher,
         bookName:'NOBODY KILLED HER',
         authorName:'sabyn javeri',
@@ -39,7 +39,7 @@ export const Products = [
         quantity:153
     },
     {
-        id:4,
+        id:5,
         bookImage:thekiterunner,
         bookName:'THE KITE RUNNER',
         authorName:'khaled hosseini',
@@ -47,7 +47,7 @@ export const Products = [
         quantity:100
     },
     {
-        id:5,
+        id:6,
         bookImage:untillove,
         bookName:'UNTIL LOVE SETS US APART',
         authorName:'aditya nighhot',

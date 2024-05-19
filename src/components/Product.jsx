@@ -1,9 +1,13 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAdd , faMinus} from "@fortawesome/free-solid-svg-icons"
+import { useContext } from 'react'
+import {ShopContext} from '../data/ShopContext'
+
 
 function Product(props) {
-    const {id , bookImage , bookName , authorName , price ,quantity} = props.data
+    const {id , bookImage , bookName , authorName , price ,quantity} = props.data;
+    const {addToCart,removeFromCart , cartItems} =useContext(ShopContext)
   return (
     <div className='col-2 my-4'>
     <div className='card h-100'>
@@ -14,9 +18,9 @@ function Product(props) {
             <div className='card-text mb-5'>{price}</div>
             <div className='btns' style={{position:'absolute',bottom:'15px'}}>
             <button className='btn btn-danger p-1 mx-1 mt-1'>see details</button>
-            <button className='btn btn-danger p-1 mt-1 mt-1'><FontAwesomeIcon icon={faAdd}/></button>
-            <a className='px-1'>0</a>
-            <button className='btn btn-danger p-1 mt-1 mt-1'><FontAwesomeIcon icon={faMinus}/></button>
+            <button className='btn btn-danger p-1 mt-1 mt-1' onClick={()=>addToCart(id)}><FontAwesomeIcon icon={faAdd}/></button>
+            <span className='px-1'>{cartItems[id]}</span>
+            <button className='btn btn-danger p-1 mt-1 mt-1' onClick={()=>removeFromCart(id)}><FontAwesomeIcon icon={faMinus}/></button>
             </div>
 
         </div>
