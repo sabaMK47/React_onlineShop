@@ -9,7 +9,7 @@ export function CartItem(props) {
     const { cartItems, addToCart, removeFromCart } = useContext(ShopContext)
     return (
         <div>
-            <div className='row mx-auto d-flex m-4 w-50 border rounded' style={{ position: "relative" }}>
+            <div className='row d-flex ms-5 my-3 w-100 border rounded' style={{ position: "relative" }}>
                 <div className='col-2 d-flex p-3'>
                     <img src={bookImage} style={{ width: "150px", height: "200px" }} />
                 </div>

@@ -11,7 +11,7 @@ export const Products = [
         bookImage:allthelights,
         bookName:'ALL THE LIGHT WE CAN NOT SEE',
         authorName:'anthony doerr',
-        price:'10$',
+        price:10,
         quantity:120
     },
     {
@@ -19,7 +19,7 @@ export const Products = [
         bookImage:astoryofstruggle,
         bookName:'A STORY OF STRUGGLE',
         authorName:'ashok kumawat',
-        price:'11$',
+        price:11,
         quantity:20
     },
     {
@@ -27,7 +27,7 @@ export const Products = [
         bookImage:deathcomestocall,
         bookName:'DEATH COMES TO CALL',
         authorName:'clare chase',
-        price:'9$',
+        price:9,
         quantity:98
     },
     {
@@ -35,7 +35,7 @@ export const Products = [
         bookImage:nobodykilledher,
         bookName:'NOBODY KILLED HER',
         authorName:'sabyn javeri',
-        price:'12$',
+        price:12,
         quantity:153
     },
     {
@@ -43,7 +43,7 @@ export const Products = [
         bookImage:thekiterunner,
         bookName:'THE KITE RUNNER',
         authorName:'khaled hosseini',
-        price:'10$',
+        price:10,
         quantity:100
     },
     {
@@ -51,7 +51,7 @@ export const Products = [
         bookImage:untillove,
         bookName:'UNTIL LOVE SETS US APART',
         authorName:'aditya nighhot',
-        price:'9.5$',
+        price:9.5,
         quantity:56
     }
 ]

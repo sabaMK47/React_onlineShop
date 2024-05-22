@@ -19,7 +19,7 @@ function Product(props) {
         <div className='card-body'>
             <div className='card-title'>{bookName}</div>
             <div className='card-text'>{authorName}</div>
-            <div className='card-text mb-5'>{price}</div>
+            <div className='card-text mb-5'>${price}</div>
             <div className='btns' style={{position:'absolute',bottom:'15px'}}>
             <button className='btn btn-danger p-1 mx-1 mt-1'>see details</button>
             <button className='btn btn-danger p-1 mt-1 mt-1' onClick={()=>addToCart(id)}><FontAwesomeIcon icon={faAdd}/></button>
