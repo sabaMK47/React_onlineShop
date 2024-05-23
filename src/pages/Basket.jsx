@@ -16,7 +16,7 @@ function Basket() {
       {totalAmount>0 ? (<h1 style={{marginLeft:"38%",padding:"30px"}}>your cart items</h1>):(<h1 style={{marginLeft:"49%",padding:"30px"}}>your cart is empty</h1>)}
       {Products.map((item)=>{
         if(cartItems[item.id]!==0)
-        return <CartItem data={item}/>
+        return <CartItem key={item.id} data={item}/>
       })}
       </div>
       {totalAmount > 0 &&(

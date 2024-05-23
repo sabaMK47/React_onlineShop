@@ -1,4 +1,4 @@
-import {React, createContext, useState } from "react";
+import {React, createContext, useState, useEffect } from "react";
 import { Products } from "./Products";
 
 export const ShopContext = createContext(null)
@@ -13,7 +13,16 @@ const setDefaultCart=()=>{
 
 export const ShopContextProvider=(props)=> {
    
-    const [cartItems , setCartItems]=useState(setDefaultCart())
+    const [cartItems , setCartItems]=useState( JSON.parse(localStorage.getItem("cartdata")) || setDefaultCart())
+
+    useEffect(()=>{  
+     cartItems !== 0 && localStorage.setItem("cartdata",JSON.stringify(cartItems))
+    },[cartItems])
+
+    useEffect(()=>{
+     const cartdata = localStorage.getItem("cartdata")
+     setCartItems(!!JSON.parse(cartdata) ? JSON.parse(cartdata) : [])
+    },[])
 
     const getTotalAmount = ()=>{
         let totalAmount = 0;
